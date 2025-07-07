@@ -1,0 +1,4 @@
+resources:
+  - backend
+  - backend-for-frontend
+  - ingress/ingress-for-local.yaml
