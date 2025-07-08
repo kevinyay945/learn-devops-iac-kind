@@ -1,0 +1,10 @@
+resources:
+  - ../../base
+
+patchesStrategicMerge:
+  - deployment-patch.yaml
+
+namePrefix: dev-
+
+commonLabels:
+  environment: development

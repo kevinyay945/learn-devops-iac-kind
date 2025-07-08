@@ -1,0 +1,16 @@
+resources:
+  - statefulset.yaml
+  - service.yaml
+  - configmap.yaml
+  - secret.yaml
+
+commonLabels:
+  app: redis
+  component: cache
+
+namePrefix: redis-
+
+images:
+  - name: redis-image
+    newName: redis
+    newTag: "7.4.2-bookworm"

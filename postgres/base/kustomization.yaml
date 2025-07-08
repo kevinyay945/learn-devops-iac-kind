@@ -1,0 +1,17 @@
+resources:
+  - statefulset.yaml
+  - service.yaml
+  - configmap.yaml
+  - secret.yaml
+  - pvc.yaml
+
+commonLabels:
+  app: postgres
+  component: database
+
+namePrefix: postgres-
+
+images:
+  - name: postgres-image
+    newName: postgres
+    newTag: "15"

@@ -1,0 +1,10 @@
+resources:
+  - ../../base
+
+patchesStrategicMerge:
+  - statefulset-patch.yaml
+
+namePrefix: prod-
+
+commonLabels:
+  environment: production
